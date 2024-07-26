@@ -3,6 +3,7 @@ using Business.Concrete;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
 using DataAccess.EntityFramework;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +18,10 @@ builder.Services.AddScoped<IQuestionService, QuestionManager>();
 builder.Services.AddScoped<IQuestionDal, EfQuestionDal>();
 
 builder.Services.AddScoped<IAnswerService, AnswerManager>();
-builder.Services.AddScoped<IAnswerDal, EfAnswerDal>();  
+builder.Services.AddScoped<IAnswerDal, EfAnswerDal>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+	.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Program>());
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

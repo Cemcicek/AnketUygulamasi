@@ -9,5 +9,7 @@
         public string Email { get; set; }
         public int QuestionID { get; set; }
         public string QuestionName { get; set; }
+        public int SurveyID { get; set; }
+        public string SurveyName { get; set; }
     }
 }

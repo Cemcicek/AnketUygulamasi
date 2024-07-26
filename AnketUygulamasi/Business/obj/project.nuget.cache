@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "YSjKc+U4hNqCUYy8OsJmbHoZ6aXM6pnZlHeYWIBmcB4cJoMySQQuTsIW1Wlt/ht9MU25dnqWqNlUhZe/9K98hw==",
+  "dgSpecHash": "B6k8r9HuEk2MgkWCczAt2mCpK+KOFLfOdlhDh1e9NrVde1DFzInEwjMas/NfapcJD0I2SyeWiXH/MZar6QjNcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cicek\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\cicek\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
+    "C:\\Users\\cicek\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\cicek\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",

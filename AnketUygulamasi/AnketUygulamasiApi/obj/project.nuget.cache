@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "pE58OBEjXH3PfisCFfS+UYKmPzvizEASMqfXbiSBEo2YcE1tDxsZkotd9Vhcy1JCW06Wcze+LzOenr7OJul/aQ==",
+  "dgSpecHash": "kT9crZZZ5lEmptIWn3OLh8ErXBLurRx59yNHJOGcwFZy/+nieVp0dQk55c10JvyfyR+owW8bsrezhVLA9slVPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj",
+  "projectFilePath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cicek\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\cicek\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
+    "C:\\Users\\cicek\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\cicek\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\cicek\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

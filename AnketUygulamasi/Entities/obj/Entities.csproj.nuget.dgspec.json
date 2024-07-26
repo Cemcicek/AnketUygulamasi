@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj": {}
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj": {
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\cicek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cicek\\AppData\\Roaming\\NuGet\\NuGet.Config",

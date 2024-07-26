@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiUI\\AnketUygulamasiUI.csproj": {}
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiUI\\AnketUygulamasiUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiUI\\AnketUygulamasiUI.csproj": {
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiUI\\AnketUygulamasiUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiUI\\AnketUygulamasiUI.csproj",
+        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiUI\\AnketUygulamasiUI.csproj",
         "projectName": "AnketUygulamasiUI",
-        "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiUI\\AnketUygulamasiUI.csproj",
+        "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiUI\\AnketUygulamasiUI.csproj",
         "packagesPath": "C:\\Users\\cicek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiUI\\obj\\",
+        "outputPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
             "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
               "target": "Package",
               "version": "[8.0.7, )"

@@ -11,10 +11,12 @@ namespace AnketUygulamasiApi.Controllers
     {
         private readonly IAnswerService _answerService;
         private readonly IQuestionService _questionService;
-        public AnswerController(IAnswerService answerService, IQuestionService questionService)
+        private readonly ISurveyService _surveyService;
+        public AnswerController(IAnswerService answerService, IQuestionService questionService, ISurveyService surveyService)
         {
             _answerService = answerService;
             _questionService = questionService;
+            _surveyService = surveyService;
         }
 
         [HttpGet]
@@ -34,27 +36,48 @@ namespace AnketUygulamasiApi.Controllers
             return Ok();
         }
 
-        [HttpGet("questionbyanswerlist")]
-        public IActionResult QuestionByAnswerList()
-        {
-            var questions = _questionService.TGetListAll();
-            var answers = _answerService.TGetListAll();
-            var questionViewModels = from q in questions
-                                     join s in answers on q.QuestionID equals s.QuestionID
-                                     select new AnswerDto
-                                     {
-                                         QuestionID = q.QuestionID,
-                                         QuestionName = q.QuestionName,
-                                         Answerrs = s.Answerrs,
-                                         Firstname = s.Firstname,
-                                         Lastname = s.Lastname,
-                                         Email = s.Email
-                                     };
+		[HttpGet("surveys")]
+		public IActionResult GetSurveys()
+		{
+			var surveys = _surveyService.TGetListAll();
+			var surveyDtos = surveys.Select(survey => new UpdateSurveyDto
+			{
+				SurveyID = survey.SurveyID,
+				SurveyName = survey.SurveyName
+			}).ToList();
 
-            return Ok(questionViewModels);
-        }
+			return Ok(surveyDtos);
+		}
 
-        [HttpGet("{id}")]
+
+		[HttpGet("questionbyanswerlist/{surveyId}")]
+		public IActionResult QuestionByAnswerList(int surveyId)
+		{
+			var surveys = _surveyService.TGetListAll();
+			var questions = _questionService.TGetListAll();
+			var answers = _answerService.TGetListAll();
+
+			var surveyQuestionsAnswers = from survey in surveys
+										 join question in questions on survey.SurveyID equals question.SurveyID
+										 join answer in answers on question.QuestionID equals answer.QuestionID
+										 where survey.SurveyID == surveyId
+										 select new AnswerDto
+										 {
+											 SurveyID = survey.SurveyID,
+											 SurveyName = survey.SurveyName,
+											 QuestionID = question.QuestionID,
+											 QuestionName = question.QuestionName,
+											 Answerrs = answer.Answerrs,
+											 Firstname = answer.Firstname,
+											 Lastname = answer.Lastname,
+											 Email = answer.Email
+										 };
+
+			return Ok(surveyQuestionsAnswers);
+		}
+
+
+		[HttpGet("{id}")]
         public IActionResult GetAnswer(int id)
         {
             var value = _answerService.TGetByID(id);

@@ -1,0 +1,33 @@
+﻿@model List<AnketUygulamasiUI.Models.Dtos.UpdateSurveyDto>
+
+@{
+    ViewData["Title"] = "Select Survey";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content" style="padding: 100px 0px 20px 0px;">
+    <div class="container-fluid">
+        <h4 class="page-title">Anket Seç</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form asp-action="QuestionByAnswerList" method="get">
+                            <div class="form-group">
+                                <label style="margin:15px;" for="surveyId">Anket Seçin:</label>
+                                <select style="margin: 15px;" id="surveyId" name="surveyId" class="form-control">
+                                    @foreach (var survey in Model)
+                                    {
+                                        <option value="@survey.SurveyID">@survey.SurveyName</option>
+                                    }
+                                </select>
+                            </div>
+                            <button style="margin: 15px;" type="submit" class="btn btn-outline-success">Cevapları Görüntüle</button>
+                            <button class="btn btn-outline-success mb-3" onclick="location.href='@Url.Action("ExportToExcel", "Question")'">Excel'e Aktar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

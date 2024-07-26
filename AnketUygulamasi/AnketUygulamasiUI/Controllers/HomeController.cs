@@ -30,36 +30,12 @@ namespace AnketUygulamasiUI.Controllers
         }
 
 
-        //[HttpGet]
-        //public async Task<IActionResult> CreateAnswer(int id)
-        //{
-        //    var client = _httpClientFactory.CreateClient();
-        //    var responseMessage = await client.GetAsync($"http://localhost:5155/api/Answer/answerquestion/{id}");
-
-        //    var values = new SurveyDetailsDto { SurveyID = id };
-
-        //    if (responseMessage.IsSuccessStatusCode)
-        //    {
-        //        var jsonData = await responseMessage.Content.ReadAsStringAsync();
-        //        var apiValues = JsonConvert.DeserializeObject<SurveyDetailsDto>(jsonData);
-
-        //        if (apiValues != null)
-        //        {
-        //            apiValues.SurveyID = id;
-        //            values = apiValues;
-        //        }
-        //    }
-
-        //    return View(values);
-        //}
-
-
         [HttpGet]
         public async Task<IActionResult> CreateAnswer(int id)
         {
         	var client = _httpClientFactory.CreateClient();
 
-        	// Survey detaylarýný al
+
         	var surveyResponse = await client.GetAsync($"http://localhost:5155/api/Survey/{id}");
         	if (!surveyResponse.IsSuccessStatusCode)
         		return NotFound();
@@ -67,7 +43,7 @@ namespace AnketUygulamasiUI.Controllers
         	var surveyJsonData = await surveyResponse.Content.ReadAsStringAsync();
         	var survey = JsonConvert.DeserializeObject<ResultSurveyDto>(surveyJsonData);
 
-        	// Anketin sorularýný al
+
         	var questionResponse = await client.GetAsync("http://localhost:5155/api/Question");
         	if (!questionResponse.IsSuccessStatusCode)
         		return NotFound();
@@ -75,7 +51,6 @@ namespace AnketUygulamasiUI.Controllers
         	var questionJsonData = await questionResponse.Content.ReadAsStringAsync();
         	var allQuestions = JsonConvert.DeserializeObject<List<ResultQuestionDto>>(questionJsonData);
 
-            // Sorularý filtreliyoruz
             var surveyQuestions = allQuestions
                 .Where(q => q.SurveyID == id)
                 .Select(q => new QuestionDto
@@ -85,7 +60,6 @@ namespace AnketUygulamasiUI.Controllers
                 })
                 .ToList();
 
-            // DTO oluþtur ve verileri view'e gönder
             var model = new SurveyDetailsDto
             {
                 SurveyID = survey.SurveyID,

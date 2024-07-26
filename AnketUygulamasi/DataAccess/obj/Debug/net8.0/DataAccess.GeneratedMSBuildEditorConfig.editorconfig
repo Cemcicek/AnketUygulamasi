@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataAccess
-build_property.ProjectDir = C:\Users\cicek\OneDrive\Masaüstü\AnketUygulamasi\DataAccess\
+build_property.ProjectDir = C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\DataAccess\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

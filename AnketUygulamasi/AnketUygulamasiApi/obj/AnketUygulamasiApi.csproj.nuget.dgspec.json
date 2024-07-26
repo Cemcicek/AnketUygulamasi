@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj": {}
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj": {
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj",
+        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj",
         "projectName": "AnketUygulamasiApi",
-        "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj",
+        "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiApi\\AnketUygulamasiApi.csproj",
         "packagesPath": "C:\\Users\\cicek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\AnketUygulamasiApi\\obj\\",
+        "outputPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\AnketUygulamasiApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Business\\Business.csproj"
+              "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Business\\Business.csproj"
               }
             }
           }
@@ -51,6 +51,14 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -92,14 +100,14 @@
         }
       }
     },
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Business\\Business.csproj": {
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\cicek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Business\\obj\\",
+        "outputPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,8 +124,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -131,6 +139,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -151,14 +169,14 @@
         }
       }
     },
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\cicek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,8 +193,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj"
+              "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj"
               }
             }
           }
@@ -232,14 +250,14 @@
         }
       }
     },
-    "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj": {
+    "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\cicek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cicek\\OneDrive\\Masaüstü\\AnketUygulamasi\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\cicek\\OneDrive\\Belgeler\\GitHub\\AnketUygulamasi\\AnketUygulamasi\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cicek\\AppData\\Roaming\\NuGet\\NuGet.Config",

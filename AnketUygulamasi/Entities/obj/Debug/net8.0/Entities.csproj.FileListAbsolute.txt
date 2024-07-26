@@ -9,3 +9,15 @@ C:\Users\cicek\OneDrive\Masaüstü\AnketUygulamasi\Entities\obj\Debug\net8.0\Ent
 C:\Users\cicek\OneDrive\Masaüstü\AnketUygulamasi\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\Users\cicek\OneDrive\Masaüstü\AnketUygulamasi\Entities\obj\Debug\net8.0\Entities.pdb
 C:\Users\cicek\OneDrive\Masaüstü\AnketUygulamasi\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\cicek\OneDrive\Belgeler\GitHub\AnketUygulamasi\AnketUygulamasi\Entities\obj\Debug\net8.0\ref\Entities.dll
