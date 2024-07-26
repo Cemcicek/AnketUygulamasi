@@ -1,0 +1,6 @@
+@AnketUygulamasiApi_HostAddress = http://localhost:5155
+
+GET {{AnketUygulamasiApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

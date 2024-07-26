@@ -1,0 +1,36 @@
+﻿@model AnketUygulamasiUI.Models.Dtos.LoginDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AnketUygulamasiUI.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="outer">
+        <h1>Admin Giriş</h1>
+            <form class="form-detail" method="post">
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"><b>Email</b></label>
+                    <input type="email" class="in" id="Email" asp-for="Email" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"><b>Şifre</b></label>
+                    <input type="password" class="in" id="Password" placeholder="*******" asp-for="Password">
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="bt">Giriş</button>
+            </form>
+
+    </div>
+
+</body>
+</html>

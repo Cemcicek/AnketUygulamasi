@@ -1,0 +1,71 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.nav-top {
+    background-color: #00796b!important;
+}
+
+nav-br1{
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgb(255 255 255 / 90%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 90%);
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255 255 255 / 90%);
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.breadcrumb-item {
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: "/";
+        padding: 0 0.5rem;
+        color: #6c757d;
+    }
+
+    .breadcrumb-item.active {
+        color: #6c757d;
+        text-decoration: none;
+        pointer-events: none;
+        cursor: default;
+    }

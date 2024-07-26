@@ -1,0 +1,29 @@
+﻿@model AnketUygulamasiUI.Models.Dtos.CreateQuestionDto
+@{
+    ViewData["Title"] = "CreateQuestion";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content" style="padding: 100px 0px 20px 0px;">
+    <div class="container-fluid">
+        <h4 class="page-title">Soru Ekleme Sayfası</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post" id="createQuestionForm">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="hidden" asp-for="SurveyID" />
+                            <div class="form-group">
+                                <label for="QuestionName">Soruyu Giriniz</label>
+                                <input type="text" class="form-control" asp-for="QuestionName" id="QuestionName">
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-outline-success">Ekle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
