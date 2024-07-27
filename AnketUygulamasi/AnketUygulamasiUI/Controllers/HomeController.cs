@@ -24,7 +24,8 @@ namespace AnketUygulamasiUI.Controllers
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
                 var values = JsonConvert.DeserializeObject<List<ResultSurveyDto>>(jsonData);
-                return View(values);
+                var filteredValues = values.Where(v => v.Status).ToList();
+                return View(filteredValues);
             }
             return View();
         }

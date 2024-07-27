@@ -1,6 +1,6 @@
-﻿@model AnketUygulamasiUI.Models.Dtos.UpdateSurveyDto
+﻿@model AnketUygulamasiUI.Models.Dtos.UpdateQuestionDto
 @{
-    ViewData["Title"] = "UpdateSurvey";
+    ViewData["Title"] = "UpdateQuestion";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -8,20 +8,21 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <form method="post" id="updateSurveyForm">
+                <form method="post" id="updateQuestionForm">
                     <div class="card">
                         <div class="card-header">
                             <div class="card-title">Anket Güncelleme Sayfası</div>
                         </div>
                         <div class="card-body">
+                            <input type="hidden" asp-for="QuestionID" />
                             <input type="hidden" asp-for="SurveyID" />
                             <div class="form-group">
                                 <label for="SurveyName">Anket Adını Giriniz</label>
-                                <input type="text" class="form-control" asp-for="SurveyName" id="SurveyName">
+                                <input type="text" class="form-control" asp-for="QuestionName" id="QuestionName">
                             </div>
                             <div class="form-group">
-                                <label for="Status">Anket Durumu (Aktif/Pasif):</label>
-                                <input asp-for="Status" class="form-check" id="Status"/>
+                                <label for="Status">Soru Durumu (Aktif/Pasif):</label>
+                                <input asp-for="Status" class="form-check" id="Status" />
                             </div>
                         </div>
                         <div class="card-action">

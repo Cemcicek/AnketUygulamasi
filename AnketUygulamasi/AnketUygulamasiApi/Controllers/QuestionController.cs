@@ -68,6 +68,7 @@ namespace AnketUygulamasiApi.Controllers
         {
             Question question = new Question()
             {
+				SurveyID = updateQuestionDto.SurveyID,
                 QuestionID = updateQuestionDto.QuestionID,
 				QuestionName = updateQuestionDto.QuestionName,
                 Status = updateQuestionDto.Status
