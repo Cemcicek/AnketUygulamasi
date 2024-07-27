@@ -2,9 +2,10 @@
 @{
     ViewData["Title"] = "CreateAnswer";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    int counter = 1;
 }
 
-<div class="container">
+<div class="container pt-5">
     <!-- Page Title -->
     <h1 class="page-title">@Model.SurveyName</h1>
     <p>Bir en iyi beş en kötü olacak şekilde, aşağıdaki soruları lütfen cevaplayınız.</p>
@@ -13,7 +14,7 @@
         @foreach (var question in Model.Questions)
         {
             <div class="form-group">
-                <label for="Questions_@question.QuestionID">->@question.QuestionName</label>
+                <label class="fw-bold mb-3" for="Questions_@question.QuestionID">@counter . @question.QuestionName</label>
                 <input type="hidden" name="Questions[@Model.Questions.IndexOf(question)].QuestionID" value="@question.QuestionID" />
 @*                 <input type="text" class="form-control" id="Questions_@question.QuestionID" name="Questions[@Model.Questions.IndexOf(question)].Answerrs"> *@
                 
@@ -32,21 +33,24 @@
                 <label class="d-block" for="edo-ani1" style="margin-bottom: 10px;">
                     <input onchange="ogCheck(this.value)" class="radio_animated" type="radio" name="Questions[@Model.Questions.IndexOf(question)].Answerrs" value="5"> 5
                 </label>
-
+                <hr />
             </div>
+            counter++;
         }
-        <div class="form-group" style="padding-top: 10px;">
-            <label for="Firstname">Ad</label>
-            <input type="text" class="form-control" id="Firstname" name="Firstname">
+        <div class="shadow-lg p-5" style="border-radius: 20px;">
+            <div class="form-group" style="padding-top: 10px;">
+                <label for="Firstname">Ad</label>
+                <input type="text" class="form-control" id="Firstname" name="Firstname" required>
+            </div>
+            <div class="form-group" style="padding-top: 10px;">
+                <label for="Lastname">Soyad</label>
+                <input type="text" class="form-control" id="Lastname" name="Lastname" required>
+            </div>
+            <div class="form-group" style="padding-top: 10px;">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" name="Email" required>
+            </div>
+            <button type="submit" class="btn btn-outline-success" style="margin-top: 20px;">Gönder</button>
         </div>
-        <div class="form-group" style="padding-top: 10px;">
-            <label for="Lastname">Soyad</label>
-            <input type="text" class="form-control" id="Lastname" name="Lastname">
-        </div>
-        <div class="form-group" style="padding-top: 10px;">
-            <label for="Email">Email</label>
-            <input type="email" class="form-control" id="Email" name="Email">
-        </div>
-        <button type="submit" class="btn btn-outline-success" style="margin-top: 20px;">Gönder</button>
     </form>
 </div>

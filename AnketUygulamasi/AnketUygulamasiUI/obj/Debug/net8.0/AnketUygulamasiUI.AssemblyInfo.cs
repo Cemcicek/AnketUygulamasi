@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnketUygulamasiUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20f3d5980f830598f2f05735cf783ecd98e982d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+068dcfcedf37ad8d597ea6583c9c045f499832ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnketUygulamasiUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnketUygulamasiUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
